@@ -1,7 +1,7 @@
-# MUSE Milestones
+# ALUMNO: RAFAEL RIVERO DE NICOLÁS
 ### [contents PDF](https://github.com/jahrTeaching/Milestones/blob/main/MUSE_weekly_milestones.pdf)
 
-ALUMNO: RAFAEL RIVERO DE NICOLÁS
+
 
 Create: 
 1. /sources/program.py. It should print "Hello" (first week) 
