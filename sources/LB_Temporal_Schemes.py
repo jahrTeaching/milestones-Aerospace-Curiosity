@@ -5,11 +5,12 @@ Created on Fri Sep 23 23:46:33 2022
 @author: Rafael Rivero de Nicolás
 """
 
-
-# import numpy as np
 import LB_Math_Functions as mth
 
-from scipy.optimize import fsolve
+
+# import numpy as np
+# from scipy.optimize import fsolve
+
 
 # %% Functions Definitions
 
@@ -130,9 +131,9 @@ def Crank__Nicolson(X, t, dt, Function):
     def  Crank_Nicolson_Operator(U_n1):
         return  U_n1 - X - dt/2 * ( Function(X,t) + Function(U_n1,t+dt) )
     
-    U_n1 = fsolve(Crank_Nicolson_Operator, X) # Scipy Function
+    #U_n1 = fsolve(Crank_Nicolson_Operator, X) # Scipy Function
     
-    # U_n1 = mth.Newton_Raphson(Crank_Nicolson_Operator, x_i=X) # Rafa's Function
+    U_n1 = mth.Newton_Raphson(Crank_Nicolson_Operator, x_i=X) # Rafa's Function
     
     return U_n1
 
